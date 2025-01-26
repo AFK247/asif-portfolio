@@ -6,6 +6,7 @@ import { Projects } from "@/components/sections/Projects";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Education } from "@/components/sections/Education";
 import { Navbar } from "@/components/sections/Navbar";
+import { Languages } from "@/components/sections/Languages";
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
           <WorkExperience />
           <Projects />
           <Education />
+          <Languages />
           <ContactSection />
         </main>
 
