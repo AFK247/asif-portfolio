@@ -1,12 +1,11 @@
 "use client";
-
-import { Nav } from "@/components/nav";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { WorkExperience } from "@/components/sections/WorkExperience";
 import { SkillsSection } from "@/components/sections/SkillSection";
 import { Projects } from "@/components/sections/Projects";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Education } from "@/components/sections/Education";
+import { Navbar } from "@/components/sections/Navbar";
 
 export default function Home() {
   return (
@@ -18,16 +17,30 @@ export default function Home() {
         <div className="absolute inset-0 bg-background/75 backdrop-blur-[120px]" />
       </div>
 
-      {/* Floating orbs */}
+      {/* Floating orbs with soothing distribution */}
       <div className="fixed inset-0 -z-5">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/25 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob" />
-        <div className="absolute top-1/3 right-1/3 w-96 h-96 bg-purple-500/25 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000" />
-        <div className="absolute bottom-1/3 left-1/2 w-96 h-96 bg-pink-500/25 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000" />
+        {/* Top left */}
+        <div className="absolute top-[10%] left-[10%] w-[500px] h-[500px] bg-blue-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob" />
+
+        {/* Top center */}
+        <div className="absolute top-[15%] left-[40%] w-[600px] h-[600px] bg-purple-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-4000" />
+
+        {/* Top right */}
+        <div className="absolute top-[8%] right-[10%] w-[400px] h-[400px] bg-pink-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-2000" />
+
+        {/* Center left */}
+        <div className="absolute top-[45%] left-[15%] w-[450px] h-[450px] bg-indigo-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-3000" />
+
+        {/* Center right */}
+        <div className="absolute top-[50%] right-[15%] w-[550px] h-[550px] bg-violet-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-5000" />
+
+        {/* Bottom center */}
+        <div className="absolute bottom-[15%] left-[35%] w-[500px] h-[500px] bg-blue-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-6000" />
       </div>
 
       {/* Content */}
       <div className="relative">
-        <Nav />
+        <Navbar />
         <main className="flex flex-col min-h-screen">
           <HeroSection />
           <SkillsSection />

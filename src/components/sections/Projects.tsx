@@ -16,12 +16,7 @@ export function Projects() {
             className="border rounded-lg p-8 hover:bg-secondary/50 transition"
           >
             <div className="space-y-4">
-              <div>
-                <span className="text-sm text-primary font-medium">
-                  Best Work (Client Project)
-                </span>
-                <h3 className="text-2xl font-bold mt-1">Incolink</h3>
-              </div>
+              <h3 className="text-2xl font-bold mt-1">Incolink</h3>
 
               <p className="text-foreground">
                 Built this anonymous social platform totally by myself from

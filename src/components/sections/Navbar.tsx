@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { GithubIcon, LinkedinIcon, Mail } from "lucide-react";
 import Link from "next/link";
 
-export function Nav() {
+export function Navbar() {
   return (
     <motion.header
       initial={{ y: -100 }}

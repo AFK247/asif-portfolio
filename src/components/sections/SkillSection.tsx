@@ -26,6 +26,7 @@ import {
   SiTrello,
   SiJira,
   SiAmazon,
+  SiConfluence,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 
@@ -44,8 +45,9 @@ export const skillCategories = [
     title: "Frontend",
     skills: [
       { name: "React", icon: SiReact },
-      { name: "Next.js", icon: SiNextdotjs },
-      { name: "Redux", icon: SiRedux },
+      { name: "Next JS", icon: SiNextdotjs },
+      { name: "Redux Toolkit", icon: SiRedux },
+      { name: "RTK Query", icon: SiRedux },
       { name: "Bootstrap", icon: SiBootstrap },
       { name: "TailwindCSS", icon: SiTailwindcss },
       { name: "Material-UI", icon: SiMui },
@@ -107,6 +109,7 @@ export const skillCategories = [
       { name: "Figma", icon: SiFigma },
       { name: "Trello", icon: SiTrello },
       { name: "Jira", icon: SiJira },
+      { name: "Confluence", icon: SiConfluence },
     ],
   },
 ];
@@ -114,7 +117,7 @@ export const skillCategories = [
 export function SkillsSection() {
   return (
     <section id="skills" className="py-20 px-4">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <h2 className="text-3xl font-bold mb-12 text-center">Skills</h2>
         <motion.div
           variants={container}
