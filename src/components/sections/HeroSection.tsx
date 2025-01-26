@@ -33,7 +33,8 @@ export function HeroSection() {
           variants={fadeInUp}
           className="text-4xl sm:text-6xl font-bold tracking-tight text-foreground"
         >
-          Hi, I&apos;m <span className="text-primary font-bold">Your Name</span>
+          Hi, I&apos;m{" "}
+          <span className="text-primary font-bold">Asif Ferdous</span>
         </motion.h1>
 
         <motion.h2

@@ -54,7 +54,7 @@ export default function Home() {
 
         <footer className="py-6 px-4 border-t bg-background/60 backdrop-blur-sm">
           <div className="container mx-auto text-center text-sm text-foreground/80">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Asif Ferdous. All rights reserved.
           </div>
         </footer>
       </div>
