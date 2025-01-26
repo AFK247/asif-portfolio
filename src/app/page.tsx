@@ -31,25 +31,25 @@ const container = {
 export default function Home() {
   return (
     <div className="min-h-screen relative overflow-hidden">
-      {/* Enhanced animated background */}
+      {/* Lighter background with better balance */}
       <div className="fixed inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 animate-gradient-xy" />
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20" />
-        <div className="absolute inset-0 bg-background/50 backdrop-blur-[100px]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/15 via-purple-500/15 to-pink-500/15 animate-gradient-xy" />
+        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-15" />
+        <div className="absolute inset-0 bg-background/75 backdrop-blur-[120px]" />
       </div>
 
-      {/* Floating orbs */}
+      {/* Floating orbs with adjusted opacity */}
       <div className="fixed inset-0 -z-5">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
-        <div className="absolute top-1/3 right-1/3 w-96 h-96 bg-purple-500/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000" />
-        <div className="absolute bottom-1/3 left-1/2 w-96 h-96 bg-pink-500/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/25 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob" />
+        <div className="absolute top-1/3 right-1/3 w-96 h-96 bg-purple-500/25 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000" />
+        <div className="absolute bottom-1/3 left-1/2 w-96 h-96 bg-pink-500/25 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000" />
       </div>
 
-      {/* Content */}
+      {/* Content with enhanced text contrast */}
       <div className="relative">
         <Nav />
         <main className="flex flex-col min-h-screen">
-          {/* Enhanced Hero Section */}
+          {/* Hero Section with improved text contrast */}
           <section className="flex flex-col items-center justify-center min-h-screen px-4 max-w-7xl mx-auto">
             <motion.div
               initial="hidden"
@@ -65,34 +65,36 @@ export default function Home() {
             >
               <motion.h1
                 variants={fadeInUp}
-                className="text-4xl sm:text-6xl font-bold tracking-tight"
+                className="text-4xl sm:text-6xl font-bold tracking-tight text-foreground"
               >
-                Hi, I&apos;m <span className="text-primary">Your Name</span>
+                Hi, I&apos;m{" "}
+                <span className="text-primary font-bold">Your Name</span>
               </motion.h1>
 
               <motion.h2
                 variants={fadeInUp}
-                className="text-2xl sm:text-3xl font-semibold text-muted-foreground"
+                className="text-2xl sm:text-3xl font-semibold text-foreground/90"
               >
-                Full Stack Web Developer
+                Software Engineer
               </motion.h2>
 
               <motion.div variants={fadeInUp} className="space-y-4">
-                <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+                <p className="text-lg sm:text-xl text-foreground/90 leading-relaxed">
                   With over{" "}
-                  <span className="text-primary font-semibold">2 years</span> of
-                  professional experience building and maintaining web
-                  applications. Specialized in front-end technologies like{" "}
-                  <span className="text-primary">React</span> and{" "}
-                  <span className="text-primary">Next.js</span>, with a strong
-                  ability to solve problems and quickly learn new tools.
-                </p>
-
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Dedicated to delivering efficient and scalable solutions while
-                  continuously expanding my knowledge in the ever-evolving field
-                  of web development. I focus on creating fast, accessible, and
-                  user-friendly experiences.
+                  <span className="text-zinc-100 dark:text-zinc-50 font-bold">
+                    2 years
+                  </span>{" "}
+                  of professional experience building and maintaining full stack
+                  web applications. Specialized in front-end technologies like{" "}
+                  <span className="text-zinc-100 dark:text-zinc-50 font-bold">
+                    React
+                  </span>{" "}
+                  and{" "}
+                  <span className="text-zinc-100 dark:text-zinc-50 font-bold">
+                    Next.js
+                  </span>
+                  , with a strong ability to solve problems and quickly learn
+                  new tools.
                 </p>
               </motion.div>
 
@@ -133,7 +135,7 @@ export default function Home() {
             </motion.div>
           </section>
 
-          {/* Work Experience Section */}
+          {/* Work Experience with better contrast */}
           <section className="py-20 px-4">
             <div className="container mx-auto max-w-4xl">
               <motion.div
@@ -144,7 +146,7 @@ export default function Home() {
               >
                 <motion.h2
                   variants={fadeInUp}
-                  className="text-3xl font-bold mb-12 text-center"
+                  className="text-3xl font-bold mb-12 text-center text-foreground"
                 >
                   Work Experience
                 </motion.h2>
@@ -155,19 +157,19 @@ export default function Home() {
                     className="relative border-l border-primary/20 pl-8 pb-8"
                   >
                     <div className="absolute w-4 h-4 bg-primary rounded-full -left-[8px] top-0" />
-                    <time className="text-sm text-muted-foreground mb-1 block">
+                    <time className="text-sm text-foreground mb-1 block">
                       Sep 2023 - Present
                     </time>
                     <h3 className="text-xl font-semibold mb-2">
                       Software Engineer
                     </h3>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-foreground mb-4">
                       Eagle 3D Streaming{" "}
                       <span className="text-xs ml-2">
                         Remote - Dallas, Texas, USA
                       </span>
                     </p>
-                    <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <ul className="list-disc list-inside space-y-2 text-foreground/80">
                       <li>
                         Built a pixel streaming control panel for configuring
                         the streaming settings with React and state management
@@ -222,19 +224,19 @@ export default function Home() {
                     className="relative border-l border-primary/20 pl-8"
                   >
                     <div className="absolute w-4 h-4 bg-primary rounded-full -left-[8px] top-0" />
-                    <time className="text-sm text-muted-foreground mb-1 block">
+                    <time className="text-sm text-foreground mb-1 block">
                       Feb 2023 - Aug 2023
                     </time>
                     <h3 className="text-xl font-semibold mb-2">
                       Front End Developer
                     </h3>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-foreground mb-4">
                       Shunno IT{" "}
                       <span className="text-xs ml-2">
                         Onsite - Rajshahi, Bangladesh
                       </span>
                     </p>
-                    <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <ul className="list-disc list-inside space-y-2 text-foreground/80">
                       <li>
                         Developed a web application for internet billing
                         software using React and Redux Toolkit, improving system
@@ -268,13 +270,15 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Continue with Skills Section */}
+          {/* Skills Section with improved contrast */}
           <SkillsSection />
 
-          {/* Projects Section */}
+          {/* Projects Section with better readability */}
           <section id="projects" className="py-20 px-4">
             <div className="container mx-auto max-w-4xl">
-              <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
+              <h2 className="text-3xl font-bold mb-8 text-foreground">
+                Featured Projects
+              </h2>
               <div className="space-y-8">
                 {/* Best Work - Incolink */}
                 <motion.div
@@ -291,13 +295,13 @@ export default function Home() {
                       <h3 className="text-2xl font-bold mt-1">Incolink</h3>
                     </div>
 
-                    <p className="text-muted-foreground">
+                    <p className="text-foreground">
                       An anonymous social platform for professionals which tried
                       to solve salary exploitation and unfairness in job sector
                       in Bangladesh
                     </p>
 
-                    <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <ul className="list-disc list-inside space-y-2 text-foreground">
                       <li>
                         Developed frontend with Next.js and backend with Node.js
                         and Express, adhering to best practices
@@ -352,11 +356,16 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Contact Section */}
-          <section id="contact" className="py-20 px-4 bg-secondary/50">
+          {/* Contact Section with enhanced contrast */}
+          <section
+            id="contact"
+            className="py-20 px-4 bg-background/60 backdrop-blur-sm"
+          >
             <div className="container mx-auto max-w-4xl text-center">
-              <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
-              <p className="text-muted-foreground mb-8">
+              <h2 className="text-3xl font-bold mb-8 text-foreground">
+                Get In Touch
+              </h2>
+              <p className="text-foreground/90 mb-8">
                 I&apos;m currently open for new opportunities. Whether you have
                 a question or just want to say hi, I&apos;ll try my best to get
                 back to you!
@@ -371,9 +380,8 @@ export default function Home() {
           </section>
         </main>
 
-        {/* Footer */}
-        <footer className="py-6 px-4 border-t">
-          <div className="container mx-auto text-center text-sm text-muted-foreground">
+        <footer className="py-6 px-4 border-t bg-background/60 backdrop-blur-sm">
+          <div className="container mx-auto text-center text-sm text-foreground/80">
             © {new Date().getFullYear()} Your Name. All rights reserved.
           </div>
         </footer>
