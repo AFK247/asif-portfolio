@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { SkillCategory } from "./SkillCategory";
+import { SkillCategory } from "../SkillCategory";
 import {
   SiReact,
   SiNextdotjs,
