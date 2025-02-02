@@ -27,6 +27,8 @@ import {
   SiJira,
   SiAmazon,
   SiConfluence,
+  SiVercel,
+  SiCpanel,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 
@@ -50,8 +52,8 @@ export const skillCategories = [
       { name: "RTK Query", icon: SiRedux },
       { name: "Bootstrap", icon: SiBootstrap },
       { name: "TailwindCSS", icon: SiTailwindcss },
-      { name: "Material-UI", icon: SiMui },
-      { name: "shadcn/ui", icon: SiNextdotjs },
+      { name: "Material UI", icon: SiMui },
+      { name: "Shadcn", icon: SiNextdotjs },
     ],
   },
   {
@@ -60,7 +62,9 @@ export const skillCategories = [
       { name: "Node.js", icon: SiNodedotjs },
       { name: "Express.js", icon: SiExpress },
       { name: "MongoDB", icon: SiMongodb },
-      { name: "Socket.IO", icon: SiSocketdotio },
+      { name: "Mongoose", icon: SiMongodb },
+      { name: "Firebase", icon: SiMongodb },
+      { name: "Socket.IO ", icon: SiSocketdotio },
     ],
   },
   {
@@ -110,6 +114,8 @@ export const skillCategories = [
       { name: "Trello", icon: SiTrello },
       { name: "Jira", icon: SiJira },
       { name: "Confluence", icon: SiConfluence },
+      { name: "Vercel", icon: SiVercel },
+      { name: "Cpanel", icon: SiCpanel },
     ],
   },
 ];

@@ -25,7 +25,7 @@ const fadeInUp = {
 
 export function WorkExperience() {
   return (
-    <section className="py-20 px-4">
+    <section id="experience" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial="hidden"
@@ -61,29 +61,30 @@ export function WorkExperience() {
               </div>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
-                  Built a pixel streaming control panel for configuring the
-                  streaming settings with React and state management with Redux
+                  Built a centralized login system with multi-subdomain session
+                  persistence, improving security and reducing login failures.
                 </li>
                 <li>
-                  Developed a fully-fledged centralized login system with multi
-                  subdomain persistence and proper security
+                  Integrated Google Analytics & Hotjar, enabling data-driven
+                  insights that contributed to increased user engagement which
+                  resulted in sales increase.
                 </li>
                 <li>
-                  Implemented analytics dashboard with Google Analytics and
-                  Hotjar
+                  Optimized frontend hosting with AWS S3 & CloudFront, reducing
+                  bandwidth costs by 50% and improving page reload speed and
+                  time.
                 </li>
                 <li>
-                  Made different front ends CDN-based with AWS S3 bucket and
-                  CloudFront
+                  Automated CI/CD with GitHub Actions, cutting deployment time
+                  by 70% and ensuring zero-downtime releases.
                 </li>
                 <li>
-                  Created CI/CD pipeline with GitHub Actions to fully automate
-                  the development and deployment process
+                  Developed company website & admin panel using Next.js,
+                  Node.js, and Firebase, enhancing SEO and content management.
                 </li>
                 <li>
-                  Developed company website with Next.js 15 following best
-                  practices, along with an admin panel and backend using
-                  Node.js, Express, and Firebase DB
+                  Resolved multiple technical Jira tickets, efficiently handling
+                  client queries.
                 </li>
               </ul>
               <div className="flex flex-wrap gap-2 mt-4">
@@ -92,6 +93,12 @@ export function WorkExperience() {
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   Redux
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  MUI
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  Tailwind
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   Next.js
@@ -103,13 +110,19 @@ export function WorkExperience() {
                   Express
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  Socket.io
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  CI/CD
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  CDN
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   Firebase
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   AWS
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  CI/CD
                 </span>
               </div>
             </motion.div>
@@ -134,17 +147,20 @@ export function WorkExperience() {
               </div>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
-                  Developed a web application for internet billing software
-                  using React and Redux Toolkit, improving system efficiency and
-                  user experience
+                  Developed and optimized manager features, improving
+                  application performance and usability.
                 </li>
                 <li>
-                  Conducted in-depth analysis and research to address client
-                  requirements and design solutions that align with their needs
+                  Reduced load time by 40% through code optimization, removing
+                  unnecessary api calls and caching strategies.
                 </li>
                 <li>
-                  Implemented new features and consistently resolved bugs,
-                  ensuring the application remains up to date and functional
+                  Implemented new features and fixed critical bugs, ensuring a
+                  smooth user experience.
+                </li>
+                <li>
+                  Collaborated with the marketing team to align development with
+                  customer needs.
                 </li>
               </ul>
               <div className="flex flex-wrap gap-2 mt-4">
@@ -152,10 +168,22 @@ export function WorkExperience() {
                   React
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Redux Toolkit
+                  NextJS
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  JavaScript
+                  Node
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  Express
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  MongoDB
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  Bootstrap
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  Tailwind
                 </span>
               </div>
             </motion.div>

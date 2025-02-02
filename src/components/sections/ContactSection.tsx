@@ -86,13 +86,31 @@ export function ContactSection() {
             onSubmit={handleSubmit}
             className="space-y-6 max-w-xl mx-auto mt-8"
           >
+            <div>
+              <label
+                htmlFor="from_name"
+                className="block text-sm font-medium text-foreground/90 mb-2"
+              >
+                My Email
+              </label>
+              <input
+                type="text"
+                name="from_name"
+                id="from_name"
+                required
+                className="w-full px-4 py-2 bg-background border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
+                placeholder="John Doe"
+                value={"asifferdous23@gmail.com"}
+                disabled
+              />
+            </div>
             <div className="grid gap-6 sm:grid-cols-2">
               <div>
                 <label
                   htmlFor="from_name"
                   className="block text-sm font-medium text-foreground/90 mb-2"
                 >
-                  Name
+                  Your Name
                 </label>
                 <input
                   type="text"
@@ -108,7 +126,7 @@ export function ContactSection() {
                   htmlFor="from_email"
                   className="block text-sm font-medium text-foreground/90 mb-2"
                 >
-                  Email
+                  Your Email
                 </label>
                 <input
                   type="email"
@@ -126,7 +144,7 @@ export function ContactSection() {
                 htmlFor="message"
                 className="block text-sm font-medium text-foreground/90 mb-2"
               >
-                Message
+                Your Message
               </label>
               <textarea
                 name="message"
@@ -134,7 +152,7 @@ export function ContactSection() {
                 required
                 rows={5}
                 className="w-full px-4 py-2 bg-background border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
-                placeholder="Your message"
+                placeholder="Lets collaborate..."
               />
             </div>
 

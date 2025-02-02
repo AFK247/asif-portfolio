@@ -48,19 +48,26 @@ export function HeroSection() {
           <p className="text-lg sm:text-xl text-foreground/90 leading-relaxed">
             With over{" "}
             <span className="text-zinc-100 dark:text-zinc-50 font-bold">
-              2 years
+              2 years+
             </span>{" "}
             of professional experience building and maintaining full stack web
-            applications. Specialized in front-end technologies like{" "}
+            applications. Specialized in{" "}
             <span className="text-zinc-100 dark:text-zinc-50 font-bold">
               React
             </span>{" "}
             and{" "}
             <span className="text-zinc-100 dark:text-zinc-50 font-bold">
-              Next.js
+              NextJS{" "}
             </span>
-            , with a strong ability to solve problems and quickly learn new
-            tools.
+            along with{" "}
+            <span className="text-zinc-100 dark:text-zinc-50 font-bold">
+              Node{" "}
+            </span>{" "}
+            and{" "}
+            <span className="text-zinc-100 dark:text-zinc-50 font-bold">
+              Express{" "}
+            </span>
+            with a strong ability to solve problems and quickly learn new tools.
           </p>
         </motion.div>
 
@@ -81,7 +88,7 @@ export function HeroSection() {
             View Projects
           </a>
           <a
-            href="https://drive.google.com/your-resume-link-here"
+            href="https://drive.google.com/file/d/101l0Z65K1_GaQwEfh-4xeOZeBexKAvyG/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 rounded-full border border-primary/20 hover:bg-primary/10 transition-colors"

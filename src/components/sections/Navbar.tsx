@@ -21,6 +21,15 @@ export function Navbar() {
             <Link href="#about" className="hover:text-primary/80 transition">
               About
             </Link>
+            <Link href="#skills" className="hover:text-primary/80 transition">
+              Skills
+            </Link>
+            <Link
+              href="#experience"
+              className="hover:text-primary/80 transition"
+            >
+              Experience
+            </Link>
             <Link href="#projects" className="hover:text-primary/80 transition">
               Projects
             </Link>
@@ -31,21 +40,21 @@ export function Navbar() {
 
           <div className="flex items-center gap-4">
             <Link
-              href="https://github.com"
+              href="https://github.com/AFK247"
               target="_blank"
               className="hover:text-primary/80 transition"
             >
               <GithubIcon size={20} />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/asifferdous23/"
               target="_blank"
               className="hover:text-primary/80 transition"
             >
               <LinkedinIcon size={20} />
             </Link>
             <Link
-              href="mailto:your@email.com"
+              href="mailto:asifferdous23@email.com"
               className="hover:text-primary/80 transition"
             >
               <Mail size={20} />

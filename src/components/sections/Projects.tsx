@@ -16,7 +16,12 @@ export function Projects() {
             className="border rounded-lg p-8 hover:bg-secondary/50 transition"
           >
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold mt-1">Incolink</h3>
+              <div className="flex justify-between">
+                <h3 className="text-2xl font-bold mt-1">Incolink</h3>
+                <span className="text-sm text-muted-foreground">
+                  Oct 2024 - Jan 2025
+                </span>
+              </div>
 
               <p className="text-foreground">
                 Built this anonymous social platform totally by myself from
@@ -37,13 +42,17 @@ export function Projects() {
                   Optimized data fetching, mutation, and state management using
                   RTK Query with lazy loading
                 </li>
-                <li>Used Socket.IO for real-time push notifications</li>
                 <li>
-                  Implemented proper error handling on both client and server
-                  sides with Zod
+                  Integrated real-time push notifications using Socket.io for
+                  instant updates.
                 </li>
                 <li>
-                  Customized React Hook Form for reusing different components
+                  Ensured robust error handling with Zod on both client and
+                  server.
+                </li>
+                <li>
+                  Customized React Hook Form for reusability and modular UI
+                  components.
                 </li>
               </ul>
 
@@ -58,9 +67,6 @@ export function Projects() {
                   Express
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Redux Toolkit
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   RTK Query
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
@@ -68,6 +74,12 @@ export function Projects() {
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   Zod
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  MongoDB
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  Mongoose
                 </span>
               </div>
             </div>
