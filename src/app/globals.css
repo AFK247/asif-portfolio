@@ -75,30 +75,6 @@ body {
   .container {
     @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
   }
-  .animate-blob {
-    animation: blob 10s infinite cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .animate-gradient-xy {
-    animation: gradient-xy 15s ease infinite;
-  }
-}
-
-@layer utilities {
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-  .animation-delay-3000 {
-    animation-delay: 3s;
-  }
-  .animation-delay-4000 {
-    animation-delay: 4s;
-  }
-  .animation-delay-5000 {
-    animation-delay: 5s;
-  }
-  .animation-delay-6000 {
-    animation-delay: 6s;
-  }
 }
 
 @keyframes blob {

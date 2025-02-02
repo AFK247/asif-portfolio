@@ -21,22 +21,22 @@ export default function Home() {
       {/* Floating orbs with soothing distribution */}
       <div className="fixed inset-0 -z-5">
         {/* Top left */}
-        <div className="absolute top-[10%] left-[10%] w-[500px] h-[500px] bg-blue-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob" />
+        <div className="absolute top-[10%] left-[10%] w-[500px] h-[500px] bg-blue-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40" />
 
         {/* Top center */}
-        <div className="absolute top-[15%] left-[40%] w-[600px] h-[600px] bg-purple-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-4000" />
+        <div className="absolute top-[15%] left-[40%] w-[600px] h-[600px] bg-purple-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40" />
 
         {/* Top right */}
-        <div className="absolute top-[8%] right-[10%] w-[400px] h-[400px] bg-pink-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-2000" />
+        <div className="absolute top-[8%] right-[10%] w-[400px] h-[400px] bg-pink-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40" />
 
         {/* Center left */}
-        <div className="absolute top-[45%] left-[15%] w-[450px] h-[450px] bg-indigo-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-3000" />
+        <div className="absolute top-[45%] left-[15%] w-[450px] h-[450px] bg-indigo-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40" />
 
         {/* Center right */}
-        <div className="absolute top-[50%] right-[15%] w-[550px] h-[550px] bg-violet-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-5000" />
+        <div className="absolute top-[50%] right-[15%] w-[550px] h-[550px] bg-violet-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40" />
 
         {/* Bottom center */}
-        <div className="absolute bottom-[15%] left-[35%] w-[500px] h-[500px] bg-blue-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-6000" />
+        <div className="absolute bottom-[15%] left-[35%] w-[500px] h-[500px] bg-blue-400/20 rounded-full mix-blend-multiply filter blur-2xl opacity-40" />
       </div>
 
       {/* Content */}
