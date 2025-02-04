@@ -30,12 +30,19 @@ export function ContactSection() {
 
     const form = e.currentTarget;
 
+    const emailJsServiceID = process.env
+      .NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
+    const emailJsTemplateID = process.env
+      .NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
+    const emailJsPublicID = process.env
+      .NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
+
     try {
       await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        emailJsServiceID,
+        emailJsTemplateID,
         form,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        emailJsPublicID
       );
 
       setStatus({
