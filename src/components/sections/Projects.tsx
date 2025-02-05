@@ -74,6 +74,9 @@ export function Projects() {
                   Typescript
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  MUI
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   Node.js
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
@@ -151,6 +154,9 @@ export function Projects() {
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   Redux Toolkit
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  Bootstrap
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   Node

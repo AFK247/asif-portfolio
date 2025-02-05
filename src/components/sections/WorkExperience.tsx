@@ -182,9 +182,6 @@ export function WorkExperience() {
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   Bootstrap
                 </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Tailwind
-                </span>
               </div>
             </motion.div>
           </div>
