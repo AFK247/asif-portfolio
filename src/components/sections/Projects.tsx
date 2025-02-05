@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { Link } from "lucide-react";
 
 export function Projects() {
   return (
@@ -13,11 +14,20 @@ export function Projects() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="border rounded-lg p-8 hover:bg-secondary/50 transition"
+            className="border rounded-lg p-8 hover:bg-secondary/50 transition backdrop-brightness-75"
           >
             <div className="space-y-4">
               <div className="flex justify-between">
-                <h3 className="text-2xl font-bold mt-1">Incolink</h3>
+                <h3 className="text-2xl font-bold mt-1 text-blue-500 flex items-center gap-1">
+                  <a
+                    href="http://incolink.net"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Incolink
+                  </a>
+                  <Link size={20} />
+                </h3>
                 <span className="text-sm text-muted-foreground">
                   Oct 2024 - Jan 2025
                 </span>
@@ -80,6 +90,70 @@ export function Projects() {
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   Mongoose
+                </span>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="border rounded-lg p-8 hover:bg-secondary/50 transition backdrop-brightness-75"
+          >
+            <div className="space-y-4">
+              <div className="flex justify-between">
+                <h3 className="text-2xl font-bold mt-1 text-blue-500 flex items-center gap-1">
+                  <a
+                    href="https://netfeebd.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Netfee
+                  </a>
+                  <Link size={20} />
+                </h3>
+                <span className="text-sm text-muted-foreground">
+                  Feb 2023 - Aug 2023
+                </span>
+              </div>
+
+              <p className="text-foreground">
+                NetFee is an ISP billing software. You can use the software
+                completely in Bengali and English. You also manage your ISP
+                business more easily and effectively. It provides comprehensive
+                management and billing solutions. Including complete business
+                management options. NetFee can give you the ability to manage
+                your clients and incoming request without any hassle.
+              </p>
+
+              <ul className="list-disc list-inside space-y-2 text-foreground">
+                <li>
+                  Used React table for handling complex data structures and
+                  visualize them
+                </li>
+                <li>
+                  The whole app has been built with React and Redux Toolkit with
+                  proper state management
+                </li>
+                <li>Created complex animations with CSS</li>
+              </ul>
+
+              <div className="flex flex-wrap gap-2 pt-4">
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  React
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  React Table
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  Redux Toolkit
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  Node
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  MongoDB
                 </span>
               </div>
             </div>
