@@ -71,6 +71,9 @@ export function Projects() {
                   Next.js
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
+                  Typescript
+                </span>
+                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
                   Node.js
                 </span>
                 <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
