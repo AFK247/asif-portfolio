@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Asif Portfolio",
   description:
-    "Full stack web developer with over 2 years of professional experience building and maintaining robust web applications. Specialized in React and Next JS along with Node and Express, with a strong ability to solve problems and quickly learn new tools. Dedicated in delivering efficient and scalable solutions while continuously expanding my knowledge in the ever evolving field of web development.",
+    "Full stack web developer with over 3+ years of professional experience building and maintaining robust web applications. Specialized in React and Next JS along with Node and Express, with a strong ability to solve problems and quickly learn new tools. Dedicated in delivering efficient and scalable solutions while continuously expanding my knowledge in the ever evolving field of web development.",
 };
 
 export default function RootLayout({

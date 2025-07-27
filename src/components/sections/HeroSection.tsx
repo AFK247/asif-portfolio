@@ -48,7 +48,7 @@ export function HeroSection() {
           <p className="text-lg sm:text-xl text-foreground/90 leading-relaxed">
             With over{" "}
             <span className="text-zinc-100 dark:text-zinc-50 font-bold">
-              2 years+
+              3+ years
             </span>{" "}
             of professional experience building and maintaining full stack web
             applications. Specialized in{" "}
