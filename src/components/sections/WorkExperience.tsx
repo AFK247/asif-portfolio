@@ -41,6 +41,62 @@ export function WorkExperience() {
           </motion.h2>
 
           <div className="space-y-12">
+            {/* Cayman Gateway */}
+            <motion.div
+              variants={fadeInUp}
+              className="relative border-l border-primary/20 pl-8 pb-8"
+            >
+              <div className="absolute -left-3 top-0 w-6 h-6 rounded-full border-4 border-primary/20 bg-background" />
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                <h3 className="text-xl font-bold">Software Engineer</h3>
+                <span className="text-sm text-muted-foreground">
+                  Apr 2025 - Present
+                </span>
+              </div>
+              <div className="flex flex-col md:flex-row md:items-center gap-2 mb-4">
+                <p className="text-lg text-foreground">Cayman Gateway</p>
+                <span className="text-sm text-muted-foreground">
+                  Remote - George Town, Grand Cayman, Cayman Islands
+                </span>
+              </div>
+              <ul className="list-disc list-inside space-y-2 text-foreground/80">
+                <li>Created a support ticket system for merchants.</li>
+                <li>Optimized the API consumption by 40%.</li>
+                <li>Implemented Apple Pay payment method.</li>
+                <li>
+                  Converted legacy Angular, Laravel codebase to modern React and
+                  Next.js.
+                </li>
+                <li>
+                  Converted legacy codebase from Node 12 to the latest Node
+                  version.
+                </li>
+              </ul>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {[
+                  "React",
+                  "Nest",
+                  "Next.js",
+                  "Zustand",
+                  "Node",
+                  "Express",
+                  "MySQL",
+                  "Firebase",
+                  "Sequelize",
+                  "RabbitMQ",
+                  "MUI",
+                  "Tailwind",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-xs bg-primary/10 text-primary px-2 py-1 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+
             {/* Eagle 3D Streaming */}
             <motion.div
               variants={fadeInUp}
@@ -50,7 +106,7 @@ export function WorkExperience() {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                 <h3 className="text-xl font-bold">Software Engineer</h3>
                 <span className="text-sm text-muted-foreground">
-                  Sep 2023 - Present
+                  Sep 2023 - Sept 2025
                 </span>
               </div>
               <div className="flex flex-col md:flex-row md:items-center gap-2 mb-4">
@@ -61,69 +117,52 @@ export function WorkExperience() {
               </div>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
-                  Built a centralized login system with multi-subdomain session
-                  persistence, improving security and reducing login failures.
+                  Developed a pixel streaming control panel to manipulate the
+                  stream settings.
                 </li>
                 <li>
-                  Integrated Google Analytics & Hotjar, enabling data-driven
-                  insights that contributed to increased user engagement which
-                  resulted in sales increase.
-                </li>
-                <li>
-                  Optimized frontend hosting with AWS S3 & CloudFront, reducing
-                  bandwidth costs by 50% and improving page reload speed and
-                  time.
+                  Optimized website performance with CloudFront, reducing
+                  bandwidth costs by 50%.
                 </li>
                 <li>
                   Automated CI/CD with GitHub Actions, cutting deployment time
-                  by 70% and ensuring zero-downtime releases.
+                  by 70%.
                 </li>
                 <li>
-                  Developed company website & admin panel using Next.js,
-                  Node.js, and Firebase, enhancing SEO and content management.
+                  Built a centralized login system with multi-subdomain session
+                  login persistence.
                 </li>
                 <li>
-                  Resolved multiple technical Jira tickets, efficiently handling
-                  client queries.
+                  Integrated Google Analytics & Hotjar that contributed to
+                  increased user engagement.
+                </li>
+                <li>
+                  Converted legacy React codebase to the latest Next.js version.
                 </li>
               </ul>
               <div className="flex flex-wrap gap-2 mt-4">
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  React
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Redux
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  MUI
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Tailwind
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Next.js
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Node.js
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Express
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Socket.io
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  CI/CD
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  CDN
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Firebase
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  AWS
-                </span>
+                {[
+                  "React",
+                  "Next.js",
+                  "Redux",
+                  "MUI",
+                  "Tailwind",
+                  "Node",
+                  "Express",
+                  "Firebase",
+                  "MongoDB",
+                  "AWS",
+                  "Socket.io",
+                  "CI/CD",
+                  "CDN",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-xs bg-primary/10 text-primary px-2 py-1 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </motion.div>
 
@@ -134,7 +173,7 @@ export function WorkExperience() {
             >
               <div className="absolute -left-3 top-0 w-6 h-6 rounded-full border-4 border-primary/20 bg-background" />
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                <h3 className="text-xl font-bold">Front End Developer</h3>
+                <h3 className="text-xl font-bold">Software Engineer</h3>
                 <span className="text-sm text-muted-foreground">
                   Feb 2023 - Aug 2023
                 </span>
@@ -147,16 +186,12 @@ export function WorkExperience() {
               </div>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
-                  Developed and optimized manager features, improving
-                  application performance and usability.
+                  Developed and optimized new features, improving application
+                  performance.
                 </li>
                 <li>
-                  Reduced load time by 40% through code optimization, removing
-                  unnecessary api calls and caching strategies.
-                </li>
-                <li>
-                  Implemented new features and fixed critical bugs, ensuring a
-                  smooth user experience.
+                  Reduced load time by 40% through lazy loading optimization and
+                  caching strategies.
                 </li>
                 <li>
                   Collaborated with the marketing team to align development with
@@ -164,24 +199,22 @@ export function WorkExperience() {
                 </li>
               </ul>
               <div className="flex flex-wrap gap-2 mt-4">
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  React
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  NextJS
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Node
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Express
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  MongoDB
-                </span>
-                <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded">
-                  Bootstrap
-                </span>
+                {[
+                  "React",
+                  "Node.js",
+                  "Redux Toolkit",
+                  "Bootstrap",
+                  "Tailwind",
+                  "Express",
+                  "MongoDB",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-xs bg-primary/10 text-primary px-2 py-1 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </motion.div>
           </div>

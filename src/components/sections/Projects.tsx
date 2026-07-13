@@ -19,6 +19,79 @@ export function Projects() {
             <div className="space-y-4">
               <div className="flex justify-between">
                 <h3 className="text-2xl font-bold mt-1 text-blue-500 flex items-center gap-1">
+                  Decor AI
+                </h3>
+                <span className="text-sm text-muted-foreground">2025</span>
+              </div>
+
+              <p className="text-foreground">
+                An AI image-generation platform that transforms a single room
+                photo into a restyled interior redesign, tailored to room type,
+                design style, and budget — built for the Bangladesh and
+                international market with a respective local furniture
+                marketplace.
+              </p>
+
+              <ul className="list-disc list-inside space-y-2 text-foreground">
+                <li>
+                  Architected a multi-provider AI image-generation pipeline
+                  (Cloudflare Workers AI, OpenRouter) with an automatic fallback
+                  chain, cost-optimized model selection (FLUX.2), and a
+                  declarative per-model preprocessing layer.
+                </li>
+                <li>
+                  Engineered expert-tuned img2img prompts with
+                  architecture-preservation constraints, so AI redesigns retain
+                  real walls, windows, and perspective while restyling by style
+                  / room / budget parameters.
+                </li>
+                <li>
+                  Built an AI observability dashboard — per-generation logging of
+                  model, real cost & Neuron usage, latency, and success/fallback
+                  rates, with live provider-quota tracking via Cloudflare&apos;s
+                  GraphQL analytics.
+                </li>
+                <li>
+                  Implemented server-side image preprocessing (Sharp:
+                  EXIF-normalize, resize, cost-bounded tiling) feeding the model
+                  pipeline with object storage.
+                </li>
+              </ul>
+
+              <div className="flex flex-wrap gap-2 pt-4">
+                {[
+                  "Cloudflare Workers AI",
+                  "OpenRouter",
+                  "FLUX.2",
+                  "Next.js 16",
+                  "React 19",
+                  "TypeScript",
+                  "oRPC",
+                  "Drizzle ORM",
+                  "PostgreSQL",
+                  "Sharp",
+                  "Cloudflare R2",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-xs bg-primary/10 text-primary px-2 py-1 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="border rounded-lg p-8 hover:bg-secondary/50 transition backdrop-brightness-75"
+          >
+            <div className="space-y-4">
+              <div className="flex justify-between">
+                <h3 className="text-2xl font-bold mt-1 text-blue-500 flex items-center gap-1">
                   <a
                     href="http://incolink.net"
                     target="_blank"
